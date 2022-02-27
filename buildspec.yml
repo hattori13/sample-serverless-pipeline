@@ -1,4 +1,4 @@
-vrsion: 0.1
+vrsion: 0.2
 phases:
   install:
     commands:
