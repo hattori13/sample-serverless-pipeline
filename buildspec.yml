@@ -1,0 +1,10 @@
+vrsion: 0.1
+phases:
+  install:
+    commands:
+      - pip install boto3
+      - aws cloudformation package --template-file sample-sam.yml --s3-bucket serverless-app-src-th13 --output-template-file sample-sam-output.yml
+artifacts:
+  type: zip
+  files:
+    - sample-sam-output.yml
